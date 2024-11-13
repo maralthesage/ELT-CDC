@@ -1,4 +1,4 @@
-# ETL and CDC
+# ELT and CDC
 
 In this project, two main scripts, namely, `cdc.py` and `user_rechnungen.py` are automating the process of loading files from DBF to CSV. 
 
