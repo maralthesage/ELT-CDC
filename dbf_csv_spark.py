@@ -23,10 +23,12 @@ def write_csv_spark(df_spark, file_name):
 
 # Lands and file names
 lands = ['F01', 'F02', 'F03', 'F04']
-FILE_NAME = 'V2AD1156'
+landas = ['F01']
+FILE_NAME = 'V4AR1004'
 
 for LAND in lands:
     dbf_file_path = f'/Volumes/DATA/{LAND}/{FILE_NAME}.dbf'
+    dbf_file_path = f'/Volumes/DuG/VS/Dg/VC2/F01/ARTIKEL/{FILE_NAME}.dbf'
     csv_file_path = f'/Volumes/MARAL/CSV/{LAND}/{FILE_NAME}.csv'
 
     # Check if CSV file exists

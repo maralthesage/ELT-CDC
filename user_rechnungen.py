@@ -80,5 +80,5 @@ for key, value in herkunft_map.items():
                                              when(col('HERKUNFT') == key, value).otherwise(col('HERKUNFT')))
 df_single_partition = user_rechnung.repartition(1) 
 
-# user_rechnung.coalesce(1).write.csv('user_rechnungen.csv', header=True, sep=';', mode='overwrite')
-df_single_partition.write.parquet('user_rechnungen.parquet',  mode='overwrite')
+user_rechnung.coalesce(1).write.csv('user_rechnungen.csv', header=True, sep=';', mode='overwrite')
+# df_single_partition.write.parquet('user_rechnungen.parquet',  mode='overwrite')
