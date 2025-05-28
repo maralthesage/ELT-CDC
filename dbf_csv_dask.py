@@ -5,7 +5,7 @@ from datetime import date
 from prefect import task, flow
 import pandas as pd
 
-os.environ["PREFECT_API_URL"] = "http://127.0.0.1:4200/api"
+os.environ["PREFECT_API_URL"] = "http://127.0.0.1:0000/api"
 
 
 @task(retries=3, retry_delay_seconds=10)

@@ -141,8 +141,6 @@ files = [
     "V2AD1096",
 ]
 
-files = ["V2AD1001", "V2AD1056", "V2AD1096", "V2AD1156"]
-files = ["V2AD1096"]
 land = "F01"
 
 for file in files:
