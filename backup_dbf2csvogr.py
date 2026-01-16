@@ -35,7 +35,6 @@ def convert_dbf_to_csv(logger, file_path, csv_path):
         file_path,
         "--config", "SHAPE_ENCODING", "CP850",
         "-lco", "SEPARATOR=SEMICOLON",
-        # "-lco", "WRITE_BOM=YES",
         "-lco", "STRING_QUOTING=IF_NEEDED",
     ]
 
