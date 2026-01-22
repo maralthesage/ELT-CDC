@@ -63,6 +63,7 @@ def etl_flow():
         'V2LA1001', 'V2LA1002', 'V2LA1003', 'V2LA1005', 'V2LA1006', 'V2LA1008',
         'V4AR1009', 'V2AD1009', 'V4LA1009', 'V2SC1010'
     ]
+    files = ['V2SC1010']
 
     total_files = len(lands) * len(files)
     processed_files = 0
@@ -72,7 +73,7 @@ def etl_flow():
         for FILE_NAME in files:
             processed_files += 1
             dbf_file_path = fr'/Volumes/DATA/{LAND}/{FILE_NAME}.dbf'
-            csv_file_path = fr'/Volumes/MARAL/CSV/{LAND}/{FILE_NAME}.csv'
+            csv_file_path = fr'/Volumes/MARAL/CSVfromDBF/{LAND}/{FILE_NAME}.csv'
             mirror_dbf_path = os.path.join("dbf_mirror", LAND, f"{FILE_NAME}.dbf")
             mirror_csv_path = os.path.join("csv_mirror", LAND, f"{FILE_NAME}.csv")
 
